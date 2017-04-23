@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- sources -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head> <!-- end head -->
+<script>
+    $(function() {
+       $("#header").load("header.html");
+       $("#footer").load("footer.html");    
+    });
+    
+    /* When the program is chosen */
+    function chooseProgram(obj){
+        /* Always close every input when the program is changed */
+        if(true){
+            document.getElementById("name").style
+                .display = 'none';
+            document.getElementById
+                ("beginnerDate").style.display = 'none';
+            document.getElementById
+                ("refresherDate").style.display = 'none';
+            document.getElementById("adultAge").style
+                .display = 'none';
+            document.getElementById("isMember").style
+                .display = 'none';
+            document.getElementById("isReturning")
+                .style.display = 'none';
+            document.getElementById("address").style
+                .display = 'none';
+            document.getElementById("phone").style
+                .display = 'none';
+            document.getElementById("email").style
+                .display = 'none';
+            document.getElementById("learningAbout")
+                .style.display = 'none';
+            document.getElementById("emergency").style
+                .display = 'none';
+            document.getElementById("medical").style
+                .display = 'none';
+            document.getElementById("rules").style
+                .display = 'none';
+            document.getElementById("submit").style
+                .display = 'none';
+            document.getElementById("alldayAge").style
+                .display = 'none';
+            document.getElementById("alldayDate").style
+                .display = 'none';
+            document.getElementById("allergies").style
+                .display = 'none';
+            document.getElementById("annualPdDate")
+                .style.display = 'none';
+            document.getElementById("cardioDate")
+                .style.display = 'none';
+            document.getElementById("afternoonAge")
+                .style.display = 'none';
+            document.getElementById("afternoonDate")
+                .style.display = 'none';
+            document.getElementById
+                ("weekdayMorningLocation")
+                .style.display = 'none';
+            document.getElementById
+                ("marchWeekdayMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("cbtcWeekdayMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("carpWeekdayMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("valleyWeekdayMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("marchWeekdayMorningAge").style
+                .display = 'none';
+            document.getElementById
+                ("otherWeekdayMorningAge").style
+                .display = 'none';
+            document.getElementById
+            ("weekendMorningLocation").style.display
+                = 'none';
+            document.getElementById
+                ("weekendMorningSession").style
+                .display = 'none';
+            document.getElementById
+                ("marchWeekendMorningDate")
+                .style.display = 'none';
+            document.getElementById
+                ("cbtcWeekendMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("marchWeekendMorningAge").style
+                .display = 'none';
+            document.getElementById
+                ("cbtcWeekendMorningAge").style
+                .display = 'none';
+            document.getElementById
+                ("afterSchoolDate").style
+                .display = 'none';
+            document.getElementById
+                ("afterSchoolAge").style
+                .display = 'none';
+            document.getElementById
+                ("highschoolDate").style.display
+                = 'none';
+            document.getElementById
+                ("highschoolAge").style.display
+                = 'none';
+            document.getElementById
+                ("klassicDivision").style.display
+                = 'none';
+            document.getElementById("teamName")
+                .style.display = 'none';
+            document.getElementById("teamAddress")
+                .style.display = 'none';
+            document.getElementById("teamEmail")
+                .style.display = 'none';
+            document.getElementById("teamPhone")
+                .style.display = 'none';
+            document.getElementById("lessonSize")
+                .style.display = 'none';
+        }
+        
+        /* The program that was chosen */
+        var programValue = obj.value;
+        
+        /* If the program chosen is either of the adult programs */
+        if (programValue == "1" || programValue == "2"){
+            document.getElementById("name").style
+                .display = 'block';
+            
+            /* If the program chosen is the beginner class */
+            if (programValue == "1"){
+                document.getElementById("beginnerDate")
+                    .style.display = 'block';
+            }
+            
+            /* If the program chosen is the refresher class */
+            else{
+                document.getElementById
+                ("refresherDate").style.display = 'block';
+            }
+            document.getElementById("adultAge").style
+                .display = 'block';
+            document.getElementById("isMember").style
+                .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("address").style
+                .display = 'block';
+            document.getElementById("phone").style
+                .display = 'block';
+            document.getElementById("email").style
+                .display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+                .display = 'block';
+            document.getElementById("medical").style
+                .display = 'block';
+            document.getElementById("rules").style
+                .display = 'block';
+            document.getElementById("submit").style
+                .display = 'block';
+        }
+        
+        /* If the program chosen is the all day camp */
+        else if (programValue == "3"){
+            document.getElementById("name").style
+            .display = 'block';
+            document.getElementById("alldayAge").style
+            .display = 'block';
+            document.getElementById("alldayDate")
+                .style.display = 'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("isMember").style
+            .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+            .display = 'block';
+            document.getElementById("allergies").style
+            .display = 'block';
+            document.getElementById("medical").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the program chosen is the annual pd day */
+        else if (programValue == "4"){
+            document.getElementById("name").style
+            .display = 'block';
+            document.getElementById("alldayAge").style
+            .display = 'block';
+            document.getElementById("annualPdDate")
+                .style.display = 'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("isMember").style
+            .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+            .display = 'block';
+            document.getElementById("allergies").style
+            .display = 'block';
+            document.getElementById("medical").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the program chosen is cardio tennis */
+        else if (programValue == "5"){
+            document.getElementById("name").style
+                .display = 'block';
+            document.getElementById("cardioDate").style
+                .display = 'block';
+            document.getElementById("adultAge").style
+                .display = 'block';
+            document.getElementById("isMember").style
+                .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("address").style
+                .display = 'block';
+            document.getElementById("phone").style
+                .display = 'block';
+            document.getElementById("email").style
+                .display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+                .display = 'block';
+            document.getElementById("medical").style
+                .display = 'block';
+            document.getElementById("rules").style
+                .display = 'block';
+            document.getElementById("submit").style
+                .display = 'block';
+        }
+        
+        /* If the program chosen is halfday camp in the afternoon */
+        else if (programValue == "6"){
+            document.getElementById("name").style
+            .display = 'block';
+            document.getElementById("afternoonAge")
+                .style.display = 'block';
+            document.getElementById("afternoonDate")
+                .style.display = 'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("isMember").style
+            .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+            .display = 'block';
+            document.getElementById("allergies").style
+            .display = 'block';
+            document.getElementById("medical").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the program chosen is halfday camp in the morning */
+        else if (programValue == "7"){
+            document.getElementById
+            ("weekdayMorningLocation").style.display = 'block';
+        }
+        
+        /* If the program chosen is weekend morning junior */
+        else if (programValue == "8"){
+            document.getElementById
+                ("weekendMorningLocation").style
+                .display = 'block';
+        }
+        
+        /* If the program chosen is the after school program */
+        else if (programValue == "9"){
+            document.getElementById("name")
+                .style.display = 'block';
+            document.getElementById
+                ("afterSchoolAge").style.display = 
+                'block';
+            document.getElementById
+                ("afterSchoolDate").style.display = 
+                'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("isMember").style
+            .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+            .display = 'block';
+            document.getElementById("medical").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the program chosen is the high school program */
+        else if (programValue == "10"){
+            document.getElementById("name")
+                .style.display = 'block';
+            document.getElementById
+                ("highschoolDate").style.display
+                = 'block';
+            document.getElementById
+                ("highschoolAge").style.display
+                = 'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("isMember").style
+            .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency").style
+            .display = 'block';
+            document.getElementById("medical").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the program chosen is the kanata klassic */
+        else if (programValue == "11"){
+            document.getElementById
+                ("klassicDivision").style.display
+                = 'block';
+        }
+        
+        /* If the program chosen is a private lesson */
+        else if (programValue == "12"){
+            document.getElementById("lessonSize")
+                .style.display = 'block';
+        }
+    }
+    
+    /* When the location for the weekday morning camp is chosen */
+    function chooseWeekdayMorningLocation(obj){
+        /* Always close every input below when the location has been changed */
+        if (true){
+                document.getElementById("name")
+                    .style.display = 'none';
+                document.getElementById
+                    ("marchWeekdayMorningDate").style
+                    .display = 'none';
+                document.getElementById
+                    ("cbtcWeekdayMorningDate").style
+                    .display = 'none';
+                document.getElementById
+                    ("carpWeekdayMorningDate").style
+                    .display = 'none';
+                document.getElementById
+                    ("valleyWeekdayMorningDate")
+                    .style.display = 'none';
+                document.getElementById
+                    ("marchWeekdayMorningAge")
+                    .style.display = 'none';
+                document.getElementById
+                    ("otherWeekdayMorningAge")
+                    .style.display = 'none';
+                document.getElementById("address")
+                    .style.display = 'none';
+                document.getElementById("phone")
+                    .style.display = 'none';
+                document.getElementById("email")
+                    .style.display = 'none';
+                document.getElementById("isMember")
+                    .style.display = 'none';
+                document.getElementById("isReturning")
+                    .style.display = 'none';
+                document.getElementById
+                    ("learningAbout").style.display
+                    = 'none';
+                document.getElementById("emergency")
+                    .style.display = 'none';
+                document.getElementById("allergies")
+                    .style.display = 'none';
+                document.getElementById("medical")
+                    .style.display = 'none';
+                document.getElementById("rules")
+                    .style.display = 'none';
+                document.getElementById("submit")
+                    .style.display = 'none';
+            }
+            
+        /* The location that was chosen */
+        var locationValue = obj.value;
+            
+        /* If the location is the March Tennis Club */
+        if (locationValue == "1"){
+            document.getElementById("name")
+                .style.display = 'block';  
+            document.getElementById
+                ("marchWeekdayMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("marchWeekdayMorningAge").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("isMember")
+                .style.display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById
+                ("learningAbout").style.display 
+                = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+        
+        /* If the location is at CBTC */
+        else if (locationValue == "2"){
+            document.getElementById("name")
+                .style.display = 'block';  
+            document.getElementById
+                ("cbtcWeekdayMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("otherWeekdayMorningAge").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("isMember")
+                .style.display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById
+                ("learningAbout").style.display 
+                = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+        
+        /* If the location is at Carp */
+        else if (locationValue == "3"){
+            document.getElementById("name")
+                .style.display = 'block';  
+            document.getElementById
+                ("carpWeekdayMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("otherWeekdayMorningAge").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("isMember")
+                .style.display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById
+                ("learningAbout").style.display 
+                = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+        
+        /* If the location is at Valley */
+        else if (locationValue == "4"){
+            document.getElementById("name")
+                .style.display = 'block';  
+            document.getElementById
+                ("valleyWeekdayMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("otherWeekdayMorningAge").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("isMember")
+                .style.display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById
+                ("learningAbout").style.display 
+                = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+    }
+    
+    /* When the weekend morning camp location is chosen */
+    function chooseWeekendMorningLocation(obj){
+        /* Always close every input below when the location has been changed */
+        if (true){
+            document.getElementById
+                ("weekendMorningSession").style
+                .display = 'none';
+            document.getElementById("name").style
+                .display = 'none';
+            document.getElementById
+                ("marchWeekendMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("cbtcWeekendMorningDate").style
+                .display = 'none';
+            document.getElementById
+                ("marchWeekendMorningAge").style
+                .display = 'none';
+            document.getElementById
+                ("cbtcWeekendMorningAge").style
+                .display = 'none';
+            document.getElementById("address").style
+                .display = 'none';
+            document.getElementById("phone").style
+                .display = 'none';
+            document.getElementById("email").style
+                .display = 'none';
+            document.getElementById("isMember").style
+                .display = 'none';
+            document.getElementById("isReturning")
+                .style.display = 'none';
+            document.getElementById("learningAbout")
+                .style.display = 'none';
+            document.getElementById("emergency")
+                .style.display = 'none';
+            document.getElementById("allergies")
+                .style.display = 'none';
+            document.getElementById("medical")
+                .style.display = 'none';
+            document.getElementById("rules")
+                .style.display = 'none';
+            document.getElementById("submit")
+                .style.display = 'none';
+        }
+        
+        /* The location that was chosen */
+        var locationValue = obj.value;
+        
+        /* If the location is the March Tennis Club */
+        if (locationValue == "1"){
+            document.getElementById
+                ("weekendMorningSession").style
+                .display = 'block';
+            document.getElementById("name").style
+                .display = 'block';
+            document.getElementById
+                ("marchWeekendMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("marchWeekendMorningAge").style
+                .display = 'block';
+            document.getElementById("address").style
+                .display = 'block';
+            document.getElementById("phone").style
+                .display = 'block';
+            document.getElementById("email").style
+                .display = 'block';
+            document.getElementById("isMember").style
+                .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+        
+        /* If the location is CBTC */
+        else if (locationValue == "2"){
+            document.getElementById("name").style
+                .display = 'block';
+            document.getElementById
+                ("cbtcWeekendMorningDate").style
+                .display = 'block';
+            document.getElementById
+                ("cbtcWeekendMorningAge").style
+                .display = 'block';
+            document.getElementById("address").style
+                .display = 'block';
+            document.getElementById("phone").style
+                .display = 'block';
+            document.getElementById("email").style
+                .display = 'block';
+            document.getElementById("isReturning")
+                .style.display = 'block';
+            document.getElementById("learningAbout")
+                .style.display = 'block';
+            document.getElementById("emergency")
+                .style.display = 'block';
+            document.getElementById("allergies")
+                .style.display = 'block';
+            document.getElementById("medical")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+    }
+    
+    /* When the division for the kanata klassic is chosen */
+    function chooseKlassicDivision(obj){
+        /* Always close every input below when the division has been changed */
+        if (true){
+            document.getElementById("name")
+                .style.display = 'none';
+            document.getElementById
+                ("teamName").style.display = 'none';
+            document.getElementById("address")
+                .style.display = 'none';
+            document.getElementById("teamAddress")
+                .style.display = 'none';
+            document.getElementById("email")
+                .style.display = 'none';
+            document.getElementById("teamEmail")
+                .style.display = 'none';
+            document.getElementById("phone")
+                .style.display = 'none';
+            document.getElementById("teamPhone")
+                .style.display = 'none';
+            document.getElementById("rules")
+                .style.display = 'none';
+            document.getElementById("submit")
+                .style.display = 'none';
+        }
+        
+        var divisionValue = obj.value;
+        
+        /* If the division chosen is men's or women's singles */
+        if (divisionValue == "1" || divisionValue == "3"){
+            document.getElementById("name")
+                .style.display = 'block';
+            document.getElementById("address").style
+            .display = 'block';
+            document.getElementById("phone").style
+            .display = 'block';
+            document.getElementById("email").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+        
+        /* If the division chosen is men's, women's, or mixed doubles */
+        else if (divisionValue == "2" || divisionValue == "4" || divisionValue == "5"){
+            document.getElementById("teamName")
+                .style.display = 'block';
+            document.getElementById("teamAddress")
+                .style.display = 'block';
+            document.getElementById("teamPhone")
+                .style.display = 'block';
+            document.getElementById("teamEmail").style
+            .display = 'block';
+            document.getElementById("rules").style
+            .display = 'block';
+            document.getElementById("submit").style
+            .display = 'block';
+        }
+    }
+    
+    /* When the size of a private lesson is chosen */
+    function chooseLessonSize(obj){
+        /* Always close every input below when the selection has been changed */
+        if (true){
+            document.getElementById("name").style
+                .display = 'none';
+            document.getElementById("teamName")
+                .style.display = 'none';
+            document.getElementById("address")
+                .style.display = 'none';
+            document.getElementById("phone")
+                .style.display = 'none';
+            document.getElementById("email")
+                .style.display = 'none';
+            document.getElementById("rules")
+                .style.display = 'none';
+            document.getElementById("submit")
+                .style.display = 'none';
+        }
+        
+        var lessonSizeValue = obj.value;
+        
+        /* If the lesson size is for one person */
+        if (lessonSizeValue == "1"){
+            document.getElementById("name").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+        
+        /* If the lesson size is for two people */
+        else if (lessonSizeValue == "2"){
+            document.getElementById("teamName").style
+                .display = 'block';
+            document.getElementById("address")
+                .style.display = 'block';
+            document.getElementById("phone")
+                .style.display = 'block';
+            document.getElementById("email")
+                .style.display = 'block';
+            document.getElementById("rules")
+                .style.display = 'block';
+            document.getElementById("submit")
+                .style.display = 'block';
+        }
+    }
+    
+</script>
+<body>
+    <div class="container">
+        
+        <div id="header"></div>
+        
+        <h1 class="display-3" style="font-family:Georgia">Register</h1>
+        <hr class="my-4">
+        
+        <form>
+            <!-- form-group for program -->
+            <div class="form-group" id="program">
+                <label for="programSelection">
+                    <span class="glyphicon glyphicon-star"></span> Registering for
+                </label>
+                <select onchange="chooseProgram(this)" class="form-control" id="programSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Adult Program: Beginner Series
+                    </option>
+                    <option style="display:" value="2">
+                        Adult Program: Refresher Series
+                    </option>
+                    <option style="display:" value="3">
+                        All-Day Tennis and Sports Camp (Ages 5-14)
+                    </option>
+                    <option style="display:" value="4">
+                        Annual PD Day
+                    </option>
+                    <option style="display:" value="5">
+                        Cardio Tennis
+                    </option>
+                    <option style="display:" value="6">
+                        Half-Day Tennis Camp: Afternoon (Ages 11-15)
+                    </option>
+                    <option style="display:" value="7">
+                        Half-Day Tennis Camp: Morning (Ages 5-13)
+                    </option>
+                    <option style="display:" value="8">
+                        Junior Program: Saturday Morning Juniors (Ages 3-12)
+                    </option>
+                    <option style="display:" value="9">
+                        Junior Program: After School Program (Ages 8-12)
+                    </option>
+                    <option style="display:" value="10">
+                        Junior Program: High School Program (Ages 13+)
+                    </option>
+                    <option style="display:" value="11">
+                        Kanata Klassic
+                    </option>
+                    <option style="display:" value="12">
+                        Private Lesson
+                    </option>
+                </select>
+            </div> <!-- form-group for program -->
+            
+            <!-- form-group for weekdayMorningLocation -->
+            <div id="weekdayMorningLocation" class="form-group" style="display:none">
+                <label for="weekdayMorningLocationSelection">
+                    <span class="glyphicon glyphicon-star"></span> Location
+                </label>
+                
+                <select onchange="chooseWeekdayMorningLocation(this)" class="form-control" id="weekdayMorningLocationSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        March Tennis Club (Ages 5-10)
+                    </option>
+                    <option style="display:" value="2">
+                        Crystal Beach Tennis Club (Ages 5-13)
+                    </option>
+                    <option style="display:" value="3">
+                        Carp Tennis Club (Ages 5-13)
+                    </option>
+                    <option style="display:" value="4">
+                        Valley Stream Tennis Club (Ages 5-13)
+                    </option>
+                </select>
+            </div> <!-- end form-group for morningLocation -->
+            
+            <!-- form-group for weekendMorningLocation -->
+            <div id="weekendMorningLocation" class="form-group" style="display:none">
+                <label for="weekendMorningLocationSelection">
+                    <span class="glyphicon glyphicon-star"></span>Location
+                </label>
+                
+                <select onchange="chooseWeekendMorningLocation(this)" class="form-control" id="weekendMorningLocationSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        March Tennis Club
+                    </option>
+                    <option style="display:" value="2">
+                        Crystal Beach Tennis Club
+                    </option>
+                </select>
+            </div> <!-- end form-group for weekendMorningLocation -->
+            
+            <!-- form-group for weekendMorningSession -->
+            <div id="weekendMorningSession" class="form-group" style="display:none">
+                <label for="weekendMorningSessionSelection">
+                    <span class="glyphicon glyphicon-star"></span> Session
+                </label>
+                
+                <select class="form-control" id="weekendMorningSessionSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        10:00AM-11:00AM (Ages 3-6) $85
+                    </option>
+                    <option style="display": value="2">
+                        10:00AM-11:30AM (Ages 6-8) $130
+                    </option>
+                    <option style="display:" value="3">
+                        11:00AM-12:30PM (Ages 9-12) $130
+                    </option>
+                </select>
+            </div> <!-- end form-group for weekendMorningSession -->
+            
+            <!-- form-group for klassicDivision -->
+            <div id="klassicDivision" class="form-group" style="display:none">
+                <label for="klassicDivisionSelection">
+                    <span class="glyphicon glyphicon-star"></span> Division
+                </label>
+                
+                <select onchange="chooseKlassicDivision(this)" class="form-control" id="klassicDivisionSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Men's Singles $50
+                    </option>
+                    <option style="display:" value="2">
+                        Men's Doubles $100 per team
+                    </option>
+                    <option style="display:" value="3">
+                        Women's Singles $50
+                    </option>
+                    <option style="display:" value="4">
+                        Women's Doubles $100 per team
+                    </option>
+                    <option style="display:" value="5">
+                        Mixed Doubles $100 per team
+                    </option>
+                </select>
+            </div> <!-- end form-group for klassicDivision -->
+            
+            <!-- form-group for lessonSize -->
+            <div id="lessonSize" class="form-group" style="display:none">
+                <label for="lessonSizeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Number of people in lesson
+                </label>
+                
+                <select onchange="chooseLessonSize(this)" class="form-control" id="lessonSizeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        1
+                    </option>
+                    <option style="display:" value="2">
+                        2
+                    </option>
+                </select>
+            </div> <!-- end form-group for lessonSize -->
+        
+            <!-- form-group for name -->
+            <div id="name" class="form-group" style="display:none">
+                <label for="firstNameInput">
+                    <span class="glyphicon glyphicon-star"></span> First name of participant
+                </label>
+                <input type="text" class="form-control" id="firstNameInput">
+                <label for="lastNameInput">
+                    <span class="glyphicon glyphicon-star"></span> Last name of participant
+                </label>
+                <input type="text" class="form-control" id="lastNameInput">
+            </div> <!-- end form-group for name -->
+            
+            <!-- form-group for teamName -->
+            <div id="teamName" class="form-group" style="display:none">
+                <label for="teamName1FirstInput">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: First Name
+                </label>
+                
+                <input type="text" class="form-control" id="teamName1FirstInput">
+                
+                <label for="teamName1LastInput">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: Last Name
+                </label>
+                
+                <input type="text" class="form-control" id="teamName1LastInput">
+                
+                <label for="teamName2FirstInput">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: First Name
+                </label>
+                
+                <input type="text" class="form-control" id="teamName2FirstInput">
+                
+                <label for="teamName2LastInput">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: Last Name
+                </label>
+                
+                <input type="text" class="form-control" id="teamName2LastInput">
+            </div> <!-- end form-group for teamName -->
+            
+            <!-- form-group for beginnerDate -->
+            <div id="beginnerDate" class="form-group" style="display:none">
+                <label for="beginnerDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                <select class="form-control" id="beginnerDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        May 8th-29th (Mondays) 7:30PM-8:30PM $140
+                    </option>
+                    <option style="display:" value="2">
+                        June 4th-25th (Mondays) 7:30PM-8:30PM $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for beginnerDate -->
+            
+            <!-- form-group for refresherDate -->
+            <div id="refresherDate" class="form-group" style="display:none">
+                <label for="refresherDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="refresherDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        May 8th-29th (Mondays) 8:30PM-9:30PM $140
+                    </option>
+                    <option style="display:" value="2">
+                        June 4th-25th (Mondays) 8:30PM-9:30PM $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for refresherDate -->
+            
+            <!-- form-group for alldayDate -->
+            <div id="alldayDate" class="form-group" style="display:none">
+                <label for="alldayDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="alldayDateSelection">
+                    <option value="0" style="display:">
+                        Choose from the options below...
+                    </option>
+                    <option value="1" style="display:">
+                        Week #1: July 4th-7th (Tuesday to Friday) $200
+                    </option>
+                    <option value="2" style="display:">
+                        Week #2: July 10th-14th $250
+                    </option>
+                    <option value="3" style="display:">
+                        Week #3: July 17th-21st $250
+                    </option>
+                    <option value="4" style="display:">
+                        Week #4: July 24th-28th $250
+                    </option>
+                    <option value="5" style="display:">
+                        Week #5: July 31st-August 4th $250
+                    </option>
+                    <option value="6" style="display:">
+                        Week #6: August 8th-11th (Tuesday-Friday) $200
+                    </option>
+                    <option value="7" style="display:">
+                        Week #7: August 14th-18th $250
+                    </option>
+                    <option value="8" style="display:">
+                        Week #8: August 21st-25th $250
+                    </option>
+                </select> 
+            </div> <!-- end form-group for alldayDate -->
+            
+            <!-- form-group for annualPdDate -->
+            <div id="annualPdDate" class="form-group" style="display:none">
+                <label for="annualPdDateSelection">
+                    <span class="glyphicon glyphcion-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="annualPdDateSelection">
+                    <option value="0" style="display:">
+                        Choose from the options below...
+                    </option>
+                    <option value="1" style="display:">
+                        Session #1: June 9th 9:00AM-3:30PM $50 
+                    </option>
+                    <option value="2" style="display:">
+                        Session #2: June 30th 9:00AM-3:30PM $50
+                    </option>
+                </select>
+            </div> <!-- end form-group for annualPdDate -->
+            
+            <!-- form-group for cardioDate -->
+            <div id="cardioDate" class="form-group" style="display:none">
+                <label for="cardioDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="cardioDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        This Tuesday 8PM-9PM $20
+                    </option>
+                    <option style="display:" value="2">
+                        This Saturday 9AM-10AM $20 (or only $15 if you attended the Tuesday class this week)
+                    </option>
+                </select>
+            </div>
+            
+            <!-- form-group for afternoonDate -->
+            <div id="afternoonDate" class="form-group" style="display:none">
+                <label for="afternoonDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="afternoonDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Week #1: July 10th-14th (Tuesday-Friday) $115
+                    </option>
+                    <option style="display:" value="2">
+                        Week #2: July 10th-14th $140
+                    </option>
+                    <option style="display:" value="3">
+                        Week #3: July 17th-21st $140
+                    </option>
+                    <option style="display:" value="4">
+                        Week #4: July 24th-28th $140
+                    </option>
+                    <option style="display:" value="5">
+                        Week #5: July 31st-August 4th $140
+                    </option>
+                    <option style="display:" value="6">
+                        Week #6: August 8th-11th (Tuesday-Friday) $115
+                    </option>
+                    <option style="display:" value="7">
+                        Week #7: August 14th-18th $140
+                    </option>
+                    <option style="display:" value="8">
+                        Week #8: August 21st-25th $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for afternoonDate -->
+            
+            <!-- form-group for marchWeekdayMorningDate -->
+            <div id="marchWeekdayMorningDate" class="form-group" style="display:none">
+                <label for="marchWeekdayMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="marchWeekdayMorningDateSelection">
+                    <option style="display:" value="">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="">
+                        Week #1: July 4th-7th (Tuesday-Friday) $115
+                    </option>
+                    <option style="display:" value="">
+                        Week #2: July 10th-14th $140
+                    </option>
+                    <option style="display:" value="">
+                        Week #3: July 17th-21st $140
+                    </option>
+                    <option style="display:" value="">
+                        Week #4: July 24th-28th $140
+                    </option>
+                    <option style="display:" value="">
+                        Week #5: July 31st-August 4th $140
+                    </option>
+                    <option style="display:" value="">
+                        Week #6: August 8th-11th (Tuesday-Friday) $115
+                    </option>
+                    <option style="display:" value="">
+                        Week #7: August 14th-18th $140
+                    </option>
+                    <option style="display:" value="">
+                        Week #8: August 21st-25th $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for marchWeekdayMorningDate -->
+            
+            <!-- form-group for cbtcWeekdayMorningDate -->
+            <div id="cbtcWeekdayMorningDate" class="form-group" style="display:none">
+                <label for="cbtcWeekdayMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="cbtcWeekdayMorningDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        TBA Monday-Friday $140 (non-members of Crystal Beach Tennis Club will be charged a $5 guest fee)
+                    </option>
+                    <option style="display:" value="2">
+                        TBA Monday-Friday $140 (non-members of Crystal Beach Tennis Club will be charged a $5 guest fee)
+                    </option>
+                </select>
+            </div> <!-- end form-group for cbtcWeekdayMorningDate -->
+            
+            <!-- form-group for carpWeekdayMorningDate -->
+            <div id="carpWeekdayMorningDate" class="form-group" style="display:none">
+                <label for="carpWeekdayMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="carpWeekdayMorningDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        TBA (Monday-Friday) $140
+                    </option>
+                    <option style="display:" value="2">
+                        TBA (Monday-Friday) $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for carpWeekdayMorningDate -->
+            
+            <!-- form-group for valleyWeekdayMorningDate -->
+            <div id="valleyWeekdayMorningDate" class="form-group" style="display:none">
+                <label for="valleyWeekdayMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="valleyWeekdayMorningDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        TBA (Monday-Friday) $140
+                    </option>
+                    <option style="display:" value="2">
+                        TBA (Monday-Friday) $140
+                    </option>
+                </select>
+            </div> <!-- end form-group for valleyWeekdayMorningDate -->
+            
+            <!-- form-group for marchWeekendMorningDate -->
+            <div id="marchWeekendMorningDate" class="form-group" style="display:none">
+                <label for="marchWeekendMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="marchWeekendMorningDateSelection">
+                    <option value="1" style="display:">
+                        Weekend #1: May 6th-27th
+                    </option>
+                    <option value="2" style="display:">
+                        Weekend #2: June 3rd-24th
+                    </option>
+                    <option value="3" style="display:">
+                        Weekend #3: July 8th-29th
+                    </option>
+                    <option value="4" style="display:">
+                        Weekend #4: August 5th-26th
+                    </option>
+                    <option value="5" style="display:">
+                        Weekend #5: September 9th-30th
+                    </option>
+                </select>
+            </div> <!-- end form-group for marchWeekendMorningDate -->
+            
+            <!-- form-group for cbtcWeekendMorningDate -->
+            <div id="cbtcWeekendMorningDate" class="form-group" style="display:none">
+                <label for="cbtcWeekendMorningDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="cbtcWeekendMorningDateSelection">
+                    <option style="display:" value="">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="">
+                        TBA 10:30AM-11:30AM $105 (non-members of Crystal Beach Tennis Club will be charged a $5 guest fee)
+                    </option>
+                    <option style="display:" value="">
+                        TBA 10:30AM-11:30AM $105 (non-members of Crystal Beach Tennis Club will be charged a $5 guest fee)
+                    </option>
+                </select>
+            </div> <!-- end form-group for cbtcWeekendMorningDate -->
+            
+            <!-- form-group for afterSchoolDate -->
+            <div id="afterSchoolDate" class="form-group" style="display:none">
+                <label for="afterSchoolDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="afterSchoolDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Session #1: May 15th-June 22nd Monday, Wednesday, Thursday 4:00PM-5:00PM $300
+                    </option>
+                </select>
+            </div> <!-- end form-group for afterSchoolDate -->
+            
+            <!-- form-group for highschoolDate -->
+            <div id="highschoolDate" class="form-group" style="display:none">
+                <label for="highschoolDateSelection">
+                    <span class="glyphicon glyphicon-star"></span> Date
+                </label>
+                
+                <select class="form-control" id="highschoolDateSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Session #1: May 17th-June 29th (Mondays 7:00PM-8:30PM, Thursdays 7:30PM-8:30PM) $400
+                    </option>
+                    <option style="display:" value="2">
+                        Session #2: July 5th-August 24th (Mondays 7:00PM-8:30PM, Thursdays 7:30PM-8:30PM) $400
+                    </option>
+                </select>
+            </div> <!-- end form-group for highschoolDate -->
+            
+            <!-- form-group for adultAge -->
+            <div id="adultAge" class="form-group" style="display:none">
+                <label for="adultAgeSelection">
+                    Age of participant
+                </label>
+                <select class="form-control" id="adultAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        12-18
+                    </option>
+                    <option style="display:" value="2">
+                        18-23
+                    </option>
+                    <option style="display:" value="3">
+                        24-35
+                    </option>
+                    <option style="display:" value="4">
+                        36-50
+                    </option>
+                    <option style="display:" value="5">
+                        50+
+                    </option>
+                </select>
+            </div> <!-- end form-group for adultAge -->
+            
+            <!-- form-group for alldayAge -->
+            <div id="alldayAge" class="form-group" style="display:none">
+                <label for="alldayAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                <select class="form-control" id="alldayAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        4
+                    </option>
+                    <option style="display:" value="2">
+                        5
+                    </option>
+                    <option style="display:" value="3">
+                        6
+                    </option>
+                    <option style="display:" value="4">
+                        7
+                    </option>
+                    <option style="display:" value="5">
+                        8
+                    </option>
+                    <option style="display:" value="6">
+                        9
+                    </option>
+                    <option style="display:" value="7">
+                        10
+                    </option>
+                    <option style="display:" value="8">
+                        11
+                    </option>
+                    <option style="display:" value="9">
+                        12
+                    </option>
+                    <option style="display:" value="10">
+                        13
+                    </option>
+                    <option style="display:" value="11">
+                        14
+                    </option>
+                </select>
+                
+            </div> <!-- end form-group for age -->
+            
+            <!-- form-group for afternoonAge -->
+            <div id="afternoonAge" class="form-group" style="display:none">
+                <label for="afternoonAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="afternoonAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        11
+                    </option>
+                    <option style="display:" value="2">
+                        12
+                    </option>
+                    <option style="display:" value="3">
+                        13
+                    </option>
+                    <option style="display:" value="4">
+                        14
+                    </option>
+                    <option style="display:" value="5">
+                        15
+                    </option>
+                </select>
+            </div> <!-- end form-group for afternoonAge -->
+            
+            <!-- form-group for marchWeekdayMorningAge -->
+            <div id="marchWeekdayMorningAge" class="form-group" style="display:none">
+                <label for="marchWeekdayMorningAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="marchWeekdayMorningAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        5
+                    </option>
+                    <option style="display:" value="2">
+                        6
+                    </option>
+                    <option style="display:" value="3">
+                        7
+                    </option>
+                    <option style="display:" value="4">
+                        8
+                    </option>
+                    <option style="display:" value="5">
+                        9
+                    </option>
+                    <option style="display:" value="6">
+                        10
+                    </option>
+                </select>
+            </div> <!-- end form-group for marchWeekdayMorningAge -->
+            
+            <!-- form-group for otherWeekdayMorningAge -->
+            <div id="otherWeekdayMorningAge" class="form-group" style="display:none">
+                <label for="otherWeekdayMorningAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="otherWeekdayMorningAgeSelection">
+                    <option style="display:" value="">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="">
+                        5
+                    </option>
+                    <option style="display:" value="">
+                        6
+                    </option>
+                    <option style="display:" value="">
+                        7
+                    </option>
+                    <option style="display:" value="">
+                        8
+                    </option>
+                    <option style="display:" value="">
+                        9
+                    </option>
+                    <option style="display:" value="">
+                        10
+                    </option>
+                    <option style="display:" value="">
+                        11
+                    </option>
+                    <option style="display:" value="">
+                        12
+                    </option>
+                    <option style="display:" value="">
+                        13
+                    </option>
+                </select>
+            </div> <!-- end form-group for otherWeekdayMorningAge -->
+            
+            <!-- form-group for marchWeekendMorningAge -->
+            <div id="marchWeekendMorningAge" class="form-group" style="display:none">
+                <label for="marchWeekendMorningAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="marchWeekendMorningAgeSelection">
+                    <option class="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option class="display:" value="1">
+                        3
+                    </option>
+                    <option class="display:" value="2">
+                        4
+                    </option>
+                    <option class="display:" value="3">
+                        5
+                    </option>
+                    <option class="display:" value="4">
+                        6
+                    </option>
+                    <option class="display:" value="5">
+                        7
+                    </option>
+                    <option class="display:" value="6">
+                        8
+                    </option>
+                    <option class="display:" value="7">
+                        9
+                    </option>
+                    <option class="display:" value="8">
+                        10
+                    </option>
+                    <option class="display:" value="9">
+                        11
+                    </option>
+                    <option class="display:" value="10">
+                        12
+                    </option>
+                </select>
+            </div> <!-- end form-group for marchWeekendMorningAge -->
+            
+            <!-- form-group for cbtcWeekendMorningAge -->
+            <div id="cbtcWeekendMorningAge" class="form-group" style="display:none">
+                <label for="cbtcWeekendMorningAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="cbtcWeekendMorningAgeSelection">
+                    <option style="display:" value="">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="">
+                        6
+                    </option>
+                    <option style="display:" value="">
+                        7
+                    </option>
+                    <option style="display:" value="">
+                        8
+                    </option>
+                    <option style="display:" value="">
+                        9
+                    </option>
+                    <option style="display:" value="">
+                        10
+                    </option>
+                    <option style="display:" value="">
+                        11
+                    </option>
+                    <option style="display:" value="">
+                        12
+                    </option>
+                </select>
+            </div> <!-- end form-group for cbtcWeekendMorningAge -->
+            
+            <!-- form-group for afterSchoolAge -->
+            <div id="afterSchoolAge" class="form-group" style="display:none">
+                <label for="afterSchoolAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="afterSchoolAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        8
+                    </option>
+                    <option style="display:" value="2">
+                        9
+                    </option>
+                    <option style="display:" value="3">
+                        10
+                    </option>
+                    <option style="display:" value="4">
+                        11
+                    </option>
+                    <option style="display:" value="5">
+                        12
+                    </option>
+                    <option style="display:" value="6">
+                        13
+                    </option>
+                    <option style="display:" value="7">
+                        14
+                    </option>
+                    <option style="display:" value="8">
+                        15
+                    </option>
+                    <option style="display:" value="9">
+                        16
+                    </option>
+                </select>
+            </div> <!-- form-group for afterSchoolAge -->
+            
+            <!-- form-group for highschoolAge -->
+            <div id="highschoolAge" class="form-group" style="display:none">
+                <label for="highschoolAgeSelection">
+                    <span class="glyphicon glyphicon-star"></span> Age of child
+                </label>
+                
+                <select class="form-control" id="highschoolAgeSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        13
+                    </option>
+                    <option style="display:" value="2">
+                        14
+                    </option>
+                    <option style="display:" value="3">
+                        15
+                    </option>
+                    <option style="display:" value="4">
+                        16
+                    </option>
+                    <option style="display:" value="5">
+                        17
+                    </option>
+                    <option style="display:" value="6">
+                        18
+                    </option>
+                </select>
+            </div> <!-- end form-group for highschoolAge -->
+            
+            <!-- form-group for address -->
+            <div id="address" class="form-group" style="display:none">
+                <label for="streetInput">
+                    <span class="glyphicon glyphicon-star"></span> Street address
+                </label>
+                <input type="text" class="form-control" id="streetInput">
+                
+                <label for="cityInput">
+                    <span class="glyphicon glyphicon-star"></span> City
+                </label>
+                <input type="text" class="form-control" id="cityInput">
+                
+                <label for="postalInput">
+                    <span class="glyphicon glyphicon-star"></span> Postal code
+                </label>
+                <input type="text" class="form-control" id="postalInput">
+            </div> <!-- end form-group for address -->
+            
+            <!-- form-group for teamAddress -->
+            <div id="teamAddress" class="form-group" style="display:none">
+                <label for="streetInput1">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: Street address
+                </label>
+                <input type="text" class="form-control" id="streetInput1">
+                
+                <label for="cityInput1">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: City
+                </label>
+                <input type="text" class="form-control" id="cityInput1">
+                
+                <label for="postalInput1">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: Postal code
+                </label>
+                <input type="text" class="form-control" id="postalInput1">
+                
+                <label for="streetInput2">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: Street address
+                </label>
+                <input type="text" class="form-control" id="streetInput2">
+                
+                <label for="cityInput2">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: City
+                </label>
+                <input type="text" class="form-control" id="cityInput2">
+                
+                <label for="postalInput2">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: Postal code
+                </label>
+                <input type="text" class="form-control" id="postalInput2">
+            </div> <!-- end form-group for teamAddress -->
+            
+            <!-- form-group for phone -->
+            <div id="phone" class="form-group" style="display:none">
+                <label for="phoneInput">
+                    <span class="glyphicon glyphicon-star"></span> Phone number
+                </label>
+                <input type="text" class="form-control" id="phoneInput">
+            </div> <!-- end form-group for phone -->
+            
+            <!-- form-group for teamPhone -->
+            <div id="teamPhone" class="form-group" style="display:none">
+                <label for="phoneInput1">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: Phone number
+                </label>
+                <input type="text" class="form-control" id="phoneInput1">
+                
+                <label for="phoneInput2">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: Phone number
+                </label>
+                <input type="text" class="form-control" id="phoneInput2">
+            </div> <!-- end form-group for teamPhone -->
+            
+            <!-- form-group for email -->
+            <div id="email" class="form-group" style="display:none">
+                <label for="emailInput">
+                    <span class="glyphicon glyphicon-star"></span> Email address
+                </label>
+                <input type="text" class="form-control" id="emailInput">
+            </div> <!-- end form-group for email -->
+            
+            <!-- form-group for teamEmail -->
+            <div id="teamEmail" class="form-group" style="display:none">
+                <label for="emailInput1">
+                    <span class="glyphicon glyphicon-star"></span> Participant 1: Email address
+                </label>
+                <input type="text" class="form-control" id="emailInput1">
+                
+                <label for="emailInput2">
+                    <span class="glyphicon glyphicon-star"></span> Participant 2: Email address
+                </label>
+                <input type="text" class="form-control" id="emailInput2">
+            </div> <!-- end form-group for teamEmail -->
+            
+            <!-- form-group for isMember -->
+            <div id="isMember" class="form-group" style="display:none">
+                <label for="isMemberSelection">
+                    Is the participant an MTC member?
+                </label>
+                <select class="form-control" id="isMemberSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Yes
+                    </option>
+                    <option style="display:" value="2">
+                        No
+                    </option>
+                </select>
+            </div> <!-- end form-group for isMember -->
+            
+            <!-- form-group for isReturning -->
+            <div id="isReturning" class="form-group" style="display:none">
+                <label for="isReturningSelection">
+                    Has the participant attented an ATA instructional program in the past?
+                </label>
+                <select class="form-control" id="isReturningSelection">
+                    <option style="display:" value="0">
+                        Choose from the options below...
+                    </option>
+                    <option style="display:" value="1">
+                        Yes
+                    </option>
+                    <option style="display:" value="2">
+                        No
+                    </option>
+                </select>
+            </div>
+            
+            <!-- form-group for learningAbout -->
+            <div id="learningAbout" class="form-group" style="display:none">
+                <label for="learnt">
+                    How you discovered this program
+                </label>
+                <select class="form-control">
+                    <option>
+                        Choose from the options below...
+                    </option>
+                    <option>
+                        Have participated in earlier years
+                    </option>
+                    <option>
+                        ATA website
+                    </option>
+                    <option>
+                        Heard from another member
+                    </option>
+                    <option>
+                        Saw poster at club
+                    </option>
+                    <option>
+                        Kanata Kourier
+                    </option>
+                    <option>
+                        Stittsville Weekender
+                    </option>
+                    <option>
+                        Street sign
+                    </option>
+                    <option>
+                        School flyer
+                    </option>
+                    <option>
+                        Flyer in mailbox
+                    </option>
+                    <option>
+                        Dropped by club to inquire
+                    </option>
+                    <option>
+                        Ottawa Kids Camps website
+                    </option>
+                    <option>
+                        Other
+                    </option>
+                </select>
+            </div> <!-- end form-group for learningAbout -->
+            
+            <!-- form-group for emergency -->
+            <div id="emergency" class="form-group" style="display:none">
+                <label for="emergencyNameInput">
+                    <span class="glyphicon glyphicon-star"></span> Emergency Contact Name
+                </label>
+                <input type="text" class="form-control" id="emergencyNameInput">
+                <label for="emergencyHomePhoneInput">
+                    <span class="glyphicon glyphicon-star"></span> Emergency Home phone number
+                </label>
+                <input type="text" class="form-control" id="emergencyHomePhoneInput">
+                <label for="emergencyWorkPhoneInput">
+                    Emergency Work phone number
+                </label>
+                <input type="text" class="form-control" id="emergencyWorkPhoneInput">
+                <label for="emergencyCellPhoneInput">
+                    Emergency Cell phone number
+                </label>
+                <input type="text" class="form-control" id="emergencyCellPhoneInput">
+            </div> <!-- end form-group for emergency -->
+            
+            <!-- form-group for allergies -->
+            <div id="allergies" class="form-group" style="display:none">
+                <label for="allergiesInput">
+                    Does the participant have any allergies that we should be aware of?
+                </label>
+                <textarea class="form-control" id="allergiesInput"></textarea>
+            </div> <!-- end form-group for allergies -->
+            
+            <!-- form-group for medical -->
+            <div id="medical" class="form-group" style="display:none">
+                <label for="medicalInput">
+                    Does the participant have any medical issues that we should be aware of?
+                </label>
+                <textarea class="form-control" id="medicalInput"></textarea>
+            </div> <!-- end form-group for medical -->
+
+            <!-- form-group for rules -->
+            <div id="rules" class="form-group" style="display:none">
+                <label for="rulesInput">
+                    <span class="glyphicon glyphicon-star"></span> I/We hereby agree that the March Tennis Club will not be held responsible for any loss or injury incurred while on the premises. I/We agree to abide by the club rules and code of conduct.
+                </label>
+                <input class="form-check-input" type="checkbox" id="rulesInput">
+            </div> <!-- end form-group for rules -->
+            
+            <!-- form-group for submit -->
+            <div id="submit" class="form-group" style="display:none">
+                <button onclick="submit()" class="btn btn-primary" id="submitInput">
+                    Complete registration
+                </button>
+            </div> <!-- end form-group for submit -->
+            
+            <!-- form-group for indicator -->
+            <div id="indicator" class="form-group" style="padding-top: 15px; display:">
+                <label for="star">
+                    <span class="glyphicon glyphicon-star"></span> indicates a required field of information.
+                </label>
+            </div> <!-- end form-group for indicator -->
+            
+        </form>
+        
+    </div> <!-- end container -->
+    
+     <div id="footer"></div>
+    
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
